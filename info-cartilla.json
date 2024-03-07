@@ -1,0 +1,22 @@
+[
+    {
+      "fecha": "20-09-20",
+      "veterinaria": "Animalitos de Acapulco",
+      "vacuna": "Recombitek C8",
+      "diluente": "Recombitek C8",
+      "peso": "24 kg",
+      "fecha-sig": "20-09-21",
+      "id": "1",
+      "idMascota": "1"
+    },
+    {
+      "fecha": "20-09-21",
+      "veterinaria": "Animalitos de Acapulco",
+      "vacuna": "Recombitek C8",
+      "diluente": "Recombitek C8",
+      "peso": "28 kg",
+      "fecha-sig": "20-09-22",
+      "id": "2",
+      "idMascota": "1"
+    }
+  ]

@@ -1,1 +1,2 @@
-# Info_Card_Dogs2
+# Info_Card_Dogs
+Tarjetas de contectos para mascotas

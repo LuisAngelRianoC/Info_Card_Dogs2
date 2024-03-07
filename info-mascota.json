@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Luna",
+        "raza": "Husky Siberiano",
+        "peso": 20,
+        "sexo": "Hembra",
+        "especie": "Canino",
+        "fecha": "20-04-19",
+        "color": "Gris c/ Blanco",
+        "foto": "img/luna.jpeg",
+        "id": "2",
+        "idResponsable": "1"
+      }
+  ]

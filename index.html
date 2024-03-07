@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/icono.png" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My Pet Info</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="card">
+        <div class="img-content">
+            <div class="contenedor-foto">
+                <img src="" class="img-mascota" id="foto-mascota">
+            </div>
+        </div>
+
+        <div class="card-content">
+            <div class="card text-center">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="true"
+                                onclick="mostrarContenido('informacion', this)" href="#informacion">Informacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto"
+                                onclick="mostrarContenido('contacto', this)">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cartilla"
+                                onclick="mostrarContenido('cartilla', this)">Cartilla</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card-body">
+                    <div id="informacion" style="display: block;">
+                        <h5 class="card-title">Hola, Soy <span id="Nombre"></span>.</h5>
+                        <a href="https://wa.me/7441767228" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i>
+                            Whatsapp</a>
+
+                        <div class="info-mascota">
+                            <div class="mb-3">
+                                <label for="Raza" class="form-label">Raza:</label>
+                                <input type="text" class="form-control" id="Raza" placeholder="Nombre Raza" disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Peso" class="form-label">Peso:</label>
+                                <input type="text" class="form-control" id="Peso" placeholder="Peso de Mascota"
+                                    disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Fecha" class="form-label">Fecha Nacimiento:</label>
+                                <input type="text" class="form-control" id="Fecha" placeholder="Fecha Nacimiento"
+                                    disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Color" class="form-label">Color:</label>
+                                <input type="text" class="form-control" id="Color" placeholder="Color de Mascota"
+                                    disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Sexo" class="form-label">Sexo:</label>
+                                <input type="text" class="form-control" id="Sexo" placeholder="Sexo de Mascota"
+                                    disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Especie" class="form-label">Especie:</label>
+                                <input type="text" class="form-control" id="Especie" placeholder="Especie de Mascota"
+                                    disabled>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacto" id="contacto" style="display: none;">
+                        <div class="info-mascota">
+                            <div class="mb-3">
+                                <label for="Responsable" class="form-label">Responsable:</label>
+                                <input type="text" class="form-control" id="Responsable"
+                                    placeholder="Nombre de Responsable" disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Telefono1" class="form-label">Telefono 1:</label>
+                                <input type="tel" class="form-control" id="Telefono1" placeholder="Telefono"
+                                    disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Telefono2" class="form-label">Telefono 2:</label>
+                                <input type="tel" class="form-control" id="Telefono2" placeholder="Telefono"
+                                    disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Direccion" class="form-label">Direccion:</label>
+                                <input type="text" class="form-control" id="Direccion"
+                                    placeholder="Direccion"
+                            
+                                    disabled>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="Correo" class="form-label">Correo:</label>
+                                <input type="email" class="form-control Correo" id="Correo" placeholder="Correo"
+                                     disabled>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="cartilla" style="display: none;">
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Veterinaria</th>
+                                    <th scope="col">Accion</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-body">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agrega SweetAlert2 al HTML si no lo has hecho ya -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/mostrar-info-secciones.js"></script>
+    <script src="js/obtener-info-mascota.js"></script>
+    <script src="js/obtener-info-contacto.js"></script>
+    <script src="js/obtener-info-cartilla.js"></script>
+</body>
+
+</html>
