@@ -50,8 +50,12 @@ function mostrarInformacion(cita) {
         html: `
             <p><strong>Fecha:</strong> ${cita.fecha}</p>
             <p><strong>Veterinaria:</strong> ${cita.veterinaria}</p>
-            <p><strong>Vacuna:</strong> ${cita.vacuna}</p>
-            <p><strong>Diluente:</strong> ${cita.diluente}</p>
+<<<<<<< HEAD
+            <p class="vacuna><strong>Vacuna:</strong> ${cita.vacuna}</p>
+=======
+            <p class="vacuna"><strong>Vacuna:</strong> ${cita.vacuna}</p>
+>>>>>>> 7bf6e643c9488afcf11cb5f711d050a611554b34
+            <p class="diluente"><strong>Diluente:</strong> ${cita.diluente}</p>
             <p><strong>Peso:</strong> ${cita.peso}</p>
             <p><strong>Fecha siguiente:</strong> ${cita['fecha-sig']}</p>
         `,
