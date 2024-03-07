@@ -1,22 +1,42 @@
 [
-    {
-      "fecha": "20-09-20",
-      "veterinaria": "Animalitos de Acapulco",
-      "vacuna": "Recombitek C8",
-      "diluente": "Recombitek C8",
-      "peso": "24 kg",
-      "fecha-sig": "20-09-21",
-      "id": "1",
-      "idMascota": "1"
-    },
-    {
-      "fecha": "20-09-21",
-      "veterinaria": "Animalitos de Acapulco",
-      "vacuna": "Recombitek C8",
-      "diluente": "Recombitek C8",
-      "peso": "28 kg",
-      "fecha-sig": "20-09-22",
-      "id": "2",
-      "idMascota": "1"
-    }
-  ]
+  {
+    "fecha": "20-09-21",
+    "veterinaria": "Animalitos de Acapulco",
+    "vacuna": "Recombitek C8",
+    "diluente": "Recombitek C8",
+    "peso": "24 kg",
+    "fecha-sig": "20-09-21",
+    "id": "1",
+    "idMascota": "1"
+  },
+  {
+    "fecha": "20-09-21",
+    "veterinaria": "Animalitos de Acapulco",
+    "vacuna": "Peek n-rb",
+    "diluente": "",
+    "peso": "24 kg",
+    "fecha-sig": "20-09-22",
+    "id": "1",
+    "idMascota": "1"
+  },
+  {
+    "fecha": "24-09-22",
+    "veterinaria": "San Marti Coloso",
+    "vacuna": "Vanguard plus 5 l4 cv",
+    "diluente": "Vanguard plus 5 l4 cv",
+    "peso": "18.4 kg",
+    "fecha-sig": "24-09-23",
+    "id": "2",
+    "idMascota": "1"
+  },
+  {
+    "fecha": "18-09-23",
+    "veterinaria": "San Marti Coloso",
+    "vacuna": "Vanguard plus 5 l4 cv",
+    "diluente": "Vanguard plus 5 l4 cv",
+    "peso": "20",
+    "fecha-sig": "18-09-24",
+    "id": "2",
+    "idMascota": "1"
+  }
+]
